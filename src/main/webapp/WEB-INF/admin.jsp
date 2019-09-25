@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" language="java" %>
+<%@ page isELIgnored="false" contentType="text/html; charset=utf-8" language="java" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +31,11 @@
   	text-decoration: none;
     	color: #03A9F4;
      }
-     .bslf .checkbox-inline{padding-top: 7px;}
+
   </style>
 </head>
 <body>
  <h2>Je suis la page admin</h2>
+ <a href = "${pageContext.request.contextPath}/employe?action=add">Lister Employe</a>
 </body>
 </html>
