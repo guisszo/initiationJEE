@@ -28,4 +28,26 @@ public class Employedao {
             }
             return services;
     }
+
+    public void addEmploye(Employe e){
+
+        try {
+            String sql = "INSERT INTO employe VALUES(null,?,?,?,?,?,?)";
+            DatabaseHelper db = DatabaseHelper.getInstance();
+            db.iniPreparedCmd(sql);
+            db.getPstmt().setString(1,e.getMatricule());
+            db.getPstmt().setString(2,e.getNom());
+            db.getPstmt().setString(3,e.getTel());
+            db.getPstmt().setString(4,e.getDatenais().toString());
+            db.getPstmt().setInt(5,e.getSalaire());
+            db.getPstmt().setInt(6,e.getIdService().getId());
+            db.My_ExecutePrepareUpdate();
+
+
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+
+    }
 }

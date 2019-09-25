@@ -1,12 +1,12 @@
 package modeles;
-import java.util.Date;
+import java.time.LocalDate;
 public class Employe {
 
 	private int id;
 	private String matricule;
 	private String  nom;
 	private String tel;
-	private Date datenais;
+	private LocalDate datenais;
 	private int salaire;
 	private Service idService = new Service();
 
@@ -42,11 +42,11 @@ public class Employe {
 		this.tel = tel;
 	}
 
-	public Date getDatenais() {
+	public LocalDate getDatenais() {
 		return datenais;
 	}
 
-	public void setDatenais(Date datenais) {
+	public void setDatenais(LocalDate datenais) {
 		this.datenais = datenais;
 	}
 

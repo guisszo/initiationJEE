@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
+  <title>Employe</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
      body{background-color: #f1f1f1;}
@@ -45,16 +45,16 @@
         <input type="text" class="form-control" placeholder="nom" required="required" name="nom">
       </div>
       <div class="form-group">
-         <input type="number" class="form-control" placeholder="téléphone" required="required" name="tel">
+         <input type="text" class="form-control" placeholder="téléphone" required="required" name="tel">
        </div>
        <div class="form-group">
-         <input type="date" class="form-control" placeholder="Date" required="required" name="date">
+         <input type="date" class="form-control" placeholder="Date" required="required" name="datenais">
        </div>
        <div class="form-group">
          <input type="number" class="form-control" placeholder="salaire" required="required" name="salaire">
        </div>
        <div class="form-group">
-           <select class="form-control" id="exampleFormControlSelect1">
+           <select class="form-control" id="exampleFormControlSelect1" name="idservice">
              <option>Selectioner</option>
              <c:forEach items="${services}" var="s">
               <option value="${s.id}">${s.libelle}</option>
